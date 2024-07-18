@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Porfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h2>
+            <img
+              id="girl_icon"
+              src="images/girl_icon.png"
+              height="100px"
+              alt="girl_icon"
+            />SAMASHA
+          </h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Achievements_And_Involvement">Achievements</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Undergraduate At University Of Moratuwa</p>
+          <h1>
+            Hi,I'm <span>Samasha Hettiarachchi</span><br />
+            From Sri Lanka
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-----------------about--------------------->
+    <div id="about">
+      <div class="container"></div>
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/profile_image.jpg" id="im" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p id="font">
+            I am a second-year undergraduate at the University of Moratuwa,
+            Faculty of Information Technology. As a self-learner and critical
+            thinker, I am passionate about expanding my knowledge beyond the
+            classroom, with a keen interest in Artificial Intelligence. My
+            dedication to self-improvement drives me to explore cutting-edge
+            technologies and stay updated with industry advancements. Through my
+            academic journey and personal projects, I continuously enhance my
+            problem-solving and analytical skills. I am committed to leveraging
+            my knowledge and innovative mindset to make meaningful contributions
+            to the field of IT and AI, paving the way for a promising career in
+            technology.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <div class="skill">
+                    <b>HTML</b>
+                <span>95%</span>
+                <div><span style="width:95%"></span></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill">
+                    <b>CSS</b>
+                <span>80%</span>
+                <div><span style="width:80%"></span></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill">
+                    <b>Java Script</b>
+                <span>65%</span>
+                <div><span style="width:65%"></span></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill">
+                    <b>PHP</b>
+                <span>80%</span>
+                <div><span style="width:80%"></span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Project Work:</span><br />Despite lacking formal work
+                experience, I have actively engaged in numerous projects that
+                showcase my skills and dedication. These projects have given me
+                practical knowledge and a solid foundation in web development.
+              </li>
+              <li>
+                <span>Technical Skills:</span><br />I have worked extensively
+                with HTML, CSS, JavaScript, PHP, and SQL, building various web
+                applications and dynamic websites. These experiences have
+                enhanced my technical abilities and familiarity with essential
+                web development tools.
+              </li>
+              <li>
+                <span>Professional Preparation:</span><br />My project
+                involvement has honed my problem-solving abilities, teamwork,
+                and time management skills, effectively preparing me for future
+                professional opportunities in the field of Information
+                Technology.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><i id="icon_1"class="fa-sharp fa-solid fa-graduation-cap"></i><span>University</span><br />University Of Moratuwa</li>
+              <li>
+                <i id="icon_1" class="fa-solid fa-school"></i><span>School</span><br />Veyangoda Bandaranayake Central Collage
+                <li>
+                    <i   id="icon_1" class="fa-sharp fa-solid fa-pen-nib"></i><span>GCE A/L Result</span><br />
+                    <p>Physics-A</p><br>
+                    <p>Chemistry-B</p><br>
+                    <p>Biology-B</p>
+                  </li>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------Achievements and Involvement------------------------------->
+
+    <div id="Achievements_And_Involvement">
+      <div class="container">
+        <h1 class="sub-title">Achievements And Involvement</h1>
+        <div class="services-list">
+          <div>
+            <h2>Certifications</h2>
+            <h3>Web Development</h3><br>
+            <p>
+                I completed Sololearn courses in SQL, HTML, Python, JavaScript, and a PHP course on Udemy, enhancing my skills in data querying, web structuring, scripting, and dynamic applications.
+            </p><br>
+            <h3>Microsoft and LinkedIn Career Essentials in Software Development</h3><br>
+            <p>Developed a broad understanding of software development principles, project management, and essential technical skills, preparing for a career in the tech industry.</p>
+            <a href="#"> Learn more</a>
+          </div>
+          <div>
+            <h2>Ongoing Learning</h2>
+            <h3>AI/ML Course</h3><br>
+            <p>
+                AI/ML Course
+                Currently enrolled in an AI/ML course, expanding my knowledge in artificial intelligence and machine learning. This course is enhancing my understanding of key concepts and practical applications in these cutting-edge fields.
+            </p>
+            <a href="#"> Learn more</a>
+          </div>
+          <div>
+            <h2>Volunteer Work And Clubs</h2>
+            <h3>IEEE university of moratuwa</h3><br>
+            <p>
+                Actively participated in club activities, contributing to projects and events that fostered a collaborative and innovative environment. Developed leadership, teamwork, and organizational skills.
+            </p><br>
+            <h3>Rotaract</h3><br>
+            <p>Engaged in various volunteering initiatives, demonstrating a commitment to community service and personal development through active involvement and contribution.</p>
+            <a href="#"> Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------portfolio------------------------>
+
+    <div id="Projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/car.jpeg" height="300px" alt="car" />
+            <div class="layer">
+              <h3>Drive Assistance System</h3>
+              <p>Developed during my first year through teamwork, the Drive Assistance System enhances driving safety and visibility with dynamic headlight adjustment for optimal curve illumination at night, automatic activation of fog lights in misty or rainy conditions for sustained visibility, and a track detection system that audibly alerts lane deviation on challenging terrains. This project signifies my introduction to hardware systems and highlights my dedication to advancing safety technology.</p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/team.jpg" height="300px" alt="team"/>
+            <div class="layer">
+              <h3>Second-Year Software Project (Upcoming)</h3>
+              <p>In collaboration with a software company, I am preparing to undertake a second-year software project. This project will involve partnering with industry experts to tackle real-world challenges and deliver innovative solutions. Stay tuned for updates as we finalize project details and embark on this exciting journey in software development.</p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/project.jpg" height="300px" alt="project" />
+            <div class="layer">
+              <h3>Future Projects</h3>
+              <p>I anticipate engaging in significant software projects in the near future. In collaboration with a software company, these projects will provide opportunities to address real-world challenges and deliver innovative solutions. Stay tuned for updates on these exciting endeavors as they develop.</p>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!----------------------contacts------------------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:sashinisamasha@gmail.com">sashinisamasha@gmail.com</a></p>
+            <p><i class="fa-sharp fa-solid fa-phone-volume"></i>0774048523</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100080802484437"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/sashiii_sachiii/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/sashini-samasha-635a79270/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+
+          <span id="msg"></span>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+
+<script>
+
+var sidemenu=document.getElementById("sidemenu")
+
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
+
+
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyreMcqIrAS0WuZ1F3-wryzHR5hCFySn9V3BY4UP_v5fzifgUuV3sg1nCONGFXB6bBG/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+            {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function()
+            {
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+            }
+        )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
